@@ -1,0 +1,354 @@
+.filmografia-timburton-section {
+  background-color:#592F67;
+  margin: 0 auto;
+}
+
+.titoli {
+  max-width: 500px;
+  margin 0 auto;
+}
+
+.ruolo-mostra img {
+  position: absolute;
+  gap: 20px;
+}
+
+.ruolo-mostra-section {
+  background-color: #FFFFFF;
+  height: 960px;
+}
+
+.ruolo-mostra {
+  padding: 120px 20px;
+}
+
+
+.ruolo-mostra h1 {
+  color: #592F67;
+}
+
+.ruolo-mostra h1, .ruolo-mostra p {
+  padding: 150px 20px;
+}
+
+/*METTI ITALIC*/
+.ruolo-mostra p {
+  color: black;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+.biografia-timburton-section {
+  background-color: #592F67;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: flex;
+  height: 500px;
+}
+
+.biografia-timburton h1, .biografia-timburton p {
+/* spostare testo*/
+}
+
+.biografia-timburton {
+  display: grid;
+  max-width: 1120px;
+  height: 576px;
+  width: 1441px;
+  margin: auto;  
+  padding: 150px 20px;
+  grid-template-columns: 2fr 1fr;
+
+}
+
+.ruolo-mostra img {
+  position: absolute;
+  top: 1320px;
+  right: 150px;
+}
+
+.ruolo-mostra {
+  display: flex;
+}
+
+.ruolo-mostra-testi {
+  display: grid;
+  max-width: 1120px;
+  height: 576px;
+  width: 1441px;
+  margin: auto; 
+  padding: 120px 20px;
+  grid-template-columns: 3fr 1fr;
+ 
+}
+
+.testi {
+  width: 614px;
+}
+
+.biografia-timburton h1, .biografia-timburton p, span.opere {
+  color: #FFFFFF;
+}
+
+span.opere {
+  max-width: 700px;
+  padding: 120px 20px;
+  margin 0 auto;
+}
+
+.opere h1 {
+  max-width: 100px;
+  margin: 0 auto;
+}
+
+html, body, main {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+section.card img {
+  object-fit: cover;
+}
+
+#carousel {
+  position: relative;
+  height: 400px;
+  object-fit: cover;
+  top: 50%;
+  transform: translateY(-20%);
+  /*overflow: hidden;*/
+  padding: 180px;
+  margin: 0 auto;
+}
+
+#carousel div {
+  position: absolute;
+  transition: transform 400ms, left 400ms, opacity 400ms, z-index 0s;
+  opacity: 1;
+}
+
+
+#carousel div img {
+  width: 400px;
+  transition: width 400ms;
+   -webkit-user-drag: none;
+   box-shadow: rgba(66, 43, 66, 0.911) 0px 20px 30px -10px;
+}
+ 
+#carousel div img {
+  border-radius: 5px;
+  width: 330;
+  height: 464;
+  object-fit: cover;
+}
+
+#carousel div.hideLeft {
+  left: 0%;
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideLeft img {
+  width: 200px;
+}
+
+#carousel div.hideRight {
+  opacity: 0;
+  transform: translateY(50%) translateX(-50%);
+}
+
+#carousel div.hideRight img {
+  width: 200px;
+}
+
+#carousel div.prev {
+  z-index: 5;
+  left: 30%;
+  transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.prev img {
+  width: 300px;
+}
+
+#carousel div.prevLeftSecond {
+  z-index: 4;
+  left: 15%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carousel div.prevLeftSecond img {
+  width: 200px;
+}
+
+#carousel div.selected {
+  z-index: 10;
+  left: 50%;
+  transform: translateY(0px) translateX(-50%);
+}
+
+#carousel div.next {
+  z-index: 5;
+  left: 70%;
+  transform: translateY(50px) translateX(-50%);
+}
+
+#carousel div.next img {
+  width: 300px;
+}
+
+#carousel div.nextRightSecond {
+  z-index: 4;
+  left: 85%;
+  transform: translateY(50%) translateX(-50%);
+  opacity: 0.7;
+}
+
+#carousel div.nextRightSecond img {
+  width: 200px;
+}
+
+.button-82-pushable {
+  position: relative;
+  background-color: #ffffff00;
+  border: none;
+  color: #592F67;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+.button-82-pushable {
+  padding: 0;
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.main span.opere {
+  margin: 0 auto;
+  padding: 100px;
+}
+
+.buttons {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 100px;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button-82-pushable {
+  outline-offset: 4px;
+  transition: filter 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* impostando un padding alto qui è possibile allontanare i bottoni per ricreare il design, trovare metodo per mettere bottoni su img*/
+}
+
+
+.button-82-front {
+  display: block;
+  position: relative;
+  padding: 16px 27px;
+  font-size: 2rem;
+  color: #592F67;
+  background: #FFFFFF;
+  will-change: transform;
+  transform: translateY(-4px);
+  border-radius: 50%;
+  transition:
+    transform
+    600ms
+    cubic-bezier(.3, .7, .4, 1);
+}
+
+.titoli-filmografia {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #FFFFFF;
+}
+
+.testi {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+.titoli {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.titoli-filmografia {
+   font-size: 24px;
+   margin: auto;
+}  
+
+@media (min-width: 768px) {
+  .button-82-front {
+    font-size: 2rem;
+    padding: 20px 42px;
+  }
+}
+
+.button-82-pushable:hover {
+  filter: brightness(110%);
+  -webkit-filter: brightness(110%);
+}
+
+.button-82-pushable:hover .button-82-front {
+  transform: translateY(-6px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:hover .button-82-shadow {
+  transform: translateY(4px);
+  transition:
+    transform
+    250ms
+    cubic-bezier(.3, .7, .4, 1.5);
+}
+
+.button-82-pushable:active .button-82-shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button-82-pushable:focus:not(:focus-visible) {
+  outline: none;
+}
